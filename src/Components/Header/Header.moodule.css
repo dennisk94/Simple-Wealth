@@ -1,0 +1,101 @@
+.nav {
+    display: flex;
+    transition: 0.5s ease-in-out;
+    right: -290px;
+    z-index: 2;
+}
+.nav ul {
+    align-items: center;
+    gap: 25px;
+    display: flex;
+}
+header .nav-container .hamburger-icon.open,
+header .nav-container .hamburger-icon.close {
+    display: none;
+}
+header .nav-container .hamburger-icon path {
+    fill: #fff;
+}
+@media ( max-width: 48em ) {
+    header .nav-container .hamburger-icon.open,
+    header .nav-container .hamburger-icon.close {
+        display: flex;
+    }
+    header .nav-container .hamburger-icon {
+        position:absolute;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        cursor: pointer;
+    }
+    header .nav-container .hamburger-icon.open {
+        width: 28px;
+        height: 28px;
+        top: 15px;
+        right: 21px;
+    }
+
+    header .nav-container .hamburger-icon.close path {
+        fill: #fff;
+    }
+    .nav {
+        display: none;
+        transition: 0.5s ease-in-out;
+        right: -290px;
+        z-index: 2;
+    }
+    header .nav-container .hamburger-icon.close {
+        position: absolute;
+        z-index: 99;
+        top: 19px;
+        right: 21px;
+        transition: .5s ease-in-out;
+    }
+    .nav.menu-opened {
+        background-color: #374151;
+        position: fixed;
+        /* background-color: #000; */
+        display: flex;
+        right: 0;
+        left: unset;
+        top: 0;
+        bottom: 0;
+        width: 18rem;
+        flex-direction: column;
+        transition: 0.2s ease-in-out;
+        color: #fff;
+        padding: 200px 0 20px 0;
+    }
+    .nav.menu-opened ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .nav.menu-opened ul li a {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    .nav.menu-opened ul li a:hover {
+        color: #20c20e;
+    }
+    .nav-container .close-mobile-window {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: none;
+        opacity: 0.6;
+        background-color: #000;
+        width: 100vw;
+        cursor: pointer;
+        border: none;
+    }
+    .nav-container .close-mobile-window.menu-opened {
+        display: flex;
+        z-index: 1;
+    }
+}
+
+
