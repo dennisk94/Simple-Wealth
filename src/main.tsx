@@ -15,7 +15,8 @@ import { Provider } from "react-redux";
 import store from './store/userData.tsx';
 import App from './Routes/App.tsx'
 import RootLayout from "./Routes/RootLayout.tsx";
-import About from "./Pages/About.tsx";
+import Dashboard from "./Pages/Dashboard.tsx";
+import Profile from "./Pages/Profile.tsx";
 
 
 const router = createBrowserRouter([
@@ -23,7 +24,8 @@ const router = createBrowserRouter([
     path: '/', element: <RootLayout />, children: [
       // { path: "*", element: <PageNotFound /> },
       { path: "/", element: <App /> },
-      { path: "/about", element: <About /> },
+      { path: "/dashboard", element: <Dashboard /> },
+      { path: "/profile", element: <Profile /> }
       // { path: "/work/:slug", element: <SingleProject /> },
     ]
   },

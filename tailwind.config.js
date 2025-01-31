@@ -35,6 +35,7 @@ export default {
       'desktopMaxWidth': '1200px',
       '20': '20px',
       '40': '40px',
+      '50': '50px',
     },
     padding: {
       '5': '5px',
@@ -43,6 +44,16 @@ export default {
     },
     borderRadius: {
       '2': '2px',
+    },
+    gap: {
+      '5': '5px',
+      '10': '10px',
+      '15': '15px',
+      '20': '20px',
+      '40': '40px',
+    },
+    gridColumn: {
+      'bottom-start': 'grid-column: 1/2'
     }
   }
 }

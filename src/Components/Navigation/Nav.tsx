@@ -7,8 +7,8 @@ const Nav: React.FC<{ menu: boolean }> = ({ menu }) => {
         >
             <ul>
                 <NavItem name='Home' slug='' />
-                <NavItem name='About' slug='about' />
-                <NavItem name='Contact' slug='contact' />
+                <NavItem name='Dashboard' slug='dashboard' />
+                <NavItem name='Profile' slug='profile' />
             </ul>
         </nav>
     )
